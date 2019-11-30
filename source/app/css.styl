@@ -1,0 +1,958 @@
+html, body
+	overflow-x hidden
+	margin 0
+	top 0!important
+	height 100%
+	background-image url(../../images/fondo.jpg);
+	background-attachment fixed
+	background-repeat no-repeat
+	background-size cover
+body
+	overflow-x hidden
+	top 0!important
+	height 100%
+::-webkit-scrollbar
+	width 12px
+	height 12px
+::-webkit-scrollbar-thumb
+	background rgba(0, 48, 140, 0.7)
+	border-radius .5em
+	width 80%
+::-webkit-scrollbar-track
+	background white
+::-webkit-scrollbar-corner
+	background transparent
+
+.Encabezado
+	background rgba(84,84,84,0.7)
+	position fixed
+	top 0
+	right 0
+	left 0
+	z-index 10
+	height 5em
+.Nav
+	height 3em
+.imagen_items_nav
+	width 20px
+	height 20px
+	background rgba(128, 128, 128, 0)
+	display inline-block
+	padding-right .1em
+.Main_nav
+	color black 
+	font-family sans-serif
+	display  inline-block!important
+	text-decoration none
+	list-style none
+	font-weight bold
+	font-size 13px
+.Main_nav_logo
+	display  inline-block!important
+.Main_nav_espec
+	display inline-block!important
+	font-weight bold
+	padding .5em
+
+.link
+	color white
+	display block
+	text-decoration none!important
+	background #353c9c!important
+	list-style none!important
+	padding 12px 16px
+	min-width 140px
+	position relative
+.menu_desp_link
+	list-style none
+.menu_desp_link:hover
+	background white!important
+.menu_desp:hover ul.menu_desp_inner
+	display block!important
+.menu-desp2:hover ul.menu_desp_in
+	display block!important
+.menu-desp3:hover ul.menu_desp_inner3, ul.menu_desp_in
+	display block!important	
+.menu_desp_in 
+	display none
+.menu_desp_inner3
+	display none
+.link-principal2
+	display block!important
+	padding .5em
+	max-width 70%
+	background #2a2e69
+	color white
+.link-principal2:hover
+	color white
+	text-decoration none!important	
+.link-principal:hover
+	color white
+	text-decoration none!important
+.link-principal
+	color white
+	display inline block
+	text-decoration none!important
+.menu_desp_inner
+	display none
+	position absolute
+	list-style none
+	padding-left 0
+	padding-top 23px
+.logo
+	display inline-block
+	margin-left -2.5em
+.pie
+	color white
+	text-align center
+	background-color #2137a5
+	position fixed
+	bottom 0
+	right 0
+	left 0
+	z-index 10
+.text
+	padding .1em
+	font-weight bold
+	font-family sans-serif
+.text1
+	font-size 1em
+.text2
+	font-size .7em
+.boton_cerrar_sesion
+	cursor pointer
+.text_fire
+	display none
+#botonfire:hover + .text_fire	
+	display block
+//inicio
+.list_soli_alert 
+	float right
+	background #26268a
+	padding 1em
+	border-radius 10em
+	border 4px solid white
+	font-size 16px
+#confirmacion
+	display none
+.container_notify 
+	font-family sans-serif
+	font-weight bold
+	color orange
+	background rgba(0,6,90,0.7)
+	margin-bottom 5px
+	border-radius 5px
+.box_notify
+	position absolute
+	top 0.1em
+	right 2em
+	max-width 26em
+.tools_tab
+	background rgba(0, 0, 0, 0.6)
+	text-align center
+.contenedor_inicio
+	display block
+	width 100%
+	height 100em
+.sidea
+	display inline-block
+	background white
+	height 100em
+	width 39%
+	max-width 39%
+	margin 0
+	vertical-align top
+.sideb
+	display inline-block
+	height 100em
+	width 60.5%
+	max-width 60.5%
+	margin 0
+	padding-right 1em
+.side
+	font-family sans-serif
+	position relative
+	margin 0 0 0 0
+.conte_text_inicio
+	margin-top 6em
+	text-align center
+.text_inicio_con2
+	margin-top 3em
+.titulo_inicio
+	color orange
+	font-weight bold
+	font-size 22px
+	font-family sans-serif
+.text_ini
+	color #f3f3f3
+	font-size 15px
+	margin-left 2em
+#transition
+	-webkit-transition: background-color 2s ease-out, border-radius 1s ease, max-width 1s ease, width 1s ease, margin-right 1s ease, box-shadow 1s linear
+	-moz-transition:background-color 2s ease-out, border-radius 1s ease, max-width 1s ease, width 1s ease, margin-right 1s ease, box-shadow 1s linear
+	-o-transition: background-color 2s ease-out, border-radius 1s ease, max-width 1s ease, width 1s ease, margin-right 1s ease, box-shadow 1s linear
+	-ms-transition:background-color 2s ease-out, border-radius 1s ease, max-width 1s ease, width 1s ease, margin-right 1s ease, box-shadow 1s linear
+	transition: background-color 2s ease-out, border-radius 1s ease, max-width 1s ease, width 1s ease, margin-right 1s ease, box-shadow 1s linear
+//tablas
+td.md-cell
+	color rgba(93,93,93,0.9)!important
+table.md-table
+	background rgba(255,255,255,0.9)
+table.md-table td.md-cell
+	font-size 11px!important
+.tittletab
+	font-weight bold
+	background #4b5c9e
+	display inline-block
+	border-radius .2em
+	padding .3em
+	color white
+	text-transform uppercase
+.standartab
+	 max-width 96%
+	 text-align: center
+	 padding-top: 5em
+	 display inline-block
+	 min-width 50%
+	 font-family sans-serif
+.container_head
+	background #0a0d73
+table.md-table th.md-column
+	color white!important
+	font-size 11px
+table.md-table tr:nth-child(even)
+	background #d0d0d0
+	color white!important
+.buscador_content
+	padding .5em
+	text-align left
+	display inline-block
+	border-radius .2em
+.buscador
+	border-radius .2em
+	color gray
+.span_check:checked ~ #boton_oculto
+	display block
+#boton_oculto
+	display none
+	color gray
+	font-size 12px
+#boton_oculto div
+	background #353c9c
+	padding .2em
+	border-radius .2em
+	color white
+.paginador
+	background #384971
+	margin-bottom 1em
+.formulariopermisos
+	display none
+//formularios
+md-icon.md-default-theme, md-icon
+	color #c1c1c1!important
+md-input-container.md-default-theme label, md-input-container label, md-input-container.md-default-theme .md-placeholder, md-input-container .md-placeholder
+	color gray!important
+md-input-container input[type="date"], md-input-container input[type="datetime-local"], md-input-container input[type="month"], md-input-container input[type="time"], md-input-container input[type="week"]
+	color gray !important
+.botongrupo
+	background rgba(60, 69, 123, 1)!important
+.form_reportepp1, .form_reportepp2
+	background rgba(0,0,0,0.7)
+	padding 5px
+	width 80%
+	border-radius .1em
+	margin-bottom 1em
+	display inline-block
+	border-radius .2em
+.buscador_filtro_epps
+	width 90%
+	text-align center
+	display inline-block
+	margin-top 2em
+	background rgba(0,0,0,0.7)
+	border-radius .2em
+#rep1, #rep2, #rep3
+	display none
+.exportxlsbutton
+	background #51a247
+	cursor pointer
+	float right
+	padding .1em
+	border-radius .2em
+	width 12em
+	color white
+	font-weight bold
+	margin 1em
+.exportpdfbutton
+	background #d02f2f
+	cursor pointer
+	float right
+	padding .1em
+	border-radius .2em
+	width 12em
+	color white
+	font-weight bold
+	margin 1em
+md-select .md-select-value
+	color white
+.csvtittle
+	background #454558
+	padding 1.2em
+	border-radius .1em
+	color white
+label     
+	font-family sans-serif
+.create_general
+	font-family sans-serif
+	position relative
+	margin 0 0 0 0
+	padding-top 6em
+.Titulo_formulario
+	font-weight bold
+	color #dcdbdb
+	font-size 1.7em
+.label_create
+	font-weight normal!important
+	color #a5a0a0!important
+	font-size 13px
+md-datepicker
+	background transparent
+.form_create
+	background rgba(23, 23, 23, 0.7)
+	border-radius 0.5em
+	border 2px solid gray
+	-webkit-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	margin-bottom 5em
+	width 30em
+	text-align center
+.form_create_filter
+	background rgba(23, 23, 23, 0.7)
+	border-radius 0.5em
+	border 2px solid gray
+	-webkit-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	margin-bottom 4em
+	width 30em
+	text-align center
+.form_create_conf
+	background rgba(255, 255,255, 0.8)
+	border-radius 0.5em
+	border 4px solid gray
+	-webkit-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	margin-bottom 15em
+	width 100%
+	text-align center
+.input_create
+	display block
+	padding 0.2em
+.input_create_inner
+	color white!important
+.form
+	margin-left 10em
+.texto_create
+	font-size 0.9em
+	color #dcdbdb
+.label_create_select
+	background #eaeaea
+	border-radius .5em
+	color black
+	font-weight bold
+	opacity 0.9
+md-option
+	border-bottom 2px solid gray!important
+	color white!important
+md-option:hover
+	color blue!important
+	background white!important
+md-content
+	opacity 0.9
+	background-color: rgba(0,0,0,.5)!important
+.md-toast-content
+	position fixed
+	top 5em
+	right 0
+	font-weight bold
+	font-family sans-serif
+	font-size 1.2em
+.boton_producto
+	text-decoration none!important
+.imagen_create_form
+	display inline-block
+	position absolute
+	top 12em
+	left 50em
+textarea
+	color white!important
+.botoncreate:hover
+	text-decoration none
+	list-style none
+.boton:hover
+	text-decoration none
+.update_sol_item
+	color white
+	font-size 13px
+.update_item
+	position relative !important
+	color #ada9bb!important
+	font-size 13px!important
+	padding-bottom 2em
+.confSol
+	display inline-block
+	vertical-align top
+.md-datepicker-input
+	color white
+.md-datepicker-button 
+	background white!important
+.hora_picker div md-input-container .md-input
+	color white
+	font-family tahoma
+.hora_picker
+	display inline-block
+	margin-right 3em
+.hora_picker_cont
+	text-align center
+mdp-time-picker .md-button.md-icon-button md-icon
+	background white
+	border-radius 5em
+	color cadetblue
+md-autocomplete md-input-container label
+	color #a2a2a2
+md-autocomplete md-input-container .md-input
+	color #b9b9b9
+	font-weight bold
+.container_details_view
+	display inline-block
+	vertical-align top
+.details_view
+	color white
+	font-weight bold
+	font-size 17px
+	padding-bottom .5em
+.details_view p 
+	background rgba(78, 78, 78, 0.7)
+	border-radius .5em
+.form_view_solicitud
+	display inline-block
+.section_detalles_solictudes
+	display inline-block
+	vertical-align top
+	text-align left
+	margin-right 1em
+.form_csv
+	text-align center
+.form_create_csv
+	display inline-block
+	width 30em
+	margin-bottom 3em
+#eppscsv
+	display none
+.boton_create_form2
+	color white
+	text-decoration none
+.boton_create_form2:hover
+	text-decoration none
+	color white
+.csvepp
+	background rgba(41, 39, 38, 0.7) !important
+#formregisepp
+	display none
+md-input-container .md-errors-spacer
+	color white
+.buscador_content
+	background rgba(115,115,115,0.7) 
+	height 3em
+.buscador_filtro
+	width 50%
+	text-align center
+	display inline-block
+	margin-top 2em
+md-select.md-default-theme .md-select-value.md-select-placeholder, md-select .md-select-value.md-select-placeholder
+	color rgba(255,255,255,0.7)
+.botonsinc 
+	background #3fad3f   
+	color white
+	font-weight bold
+	border none
+	font-size 16px
+	padding 5px
+	border-radius .2em
+	font-family: sans-serif
+	margin-right 5px
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	display block
+	margin-bottom .2em
+.botonsinc2
+	background #d65619  
+	color white
+	font-weight bold
+	border none
+	font-size 16px
+	padding 5px
+	border-radius .2em
+	font-family: sans-serif
+	margin-right 5px
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+	transition: all 0.3s ease 0s;
+	display block
+	margin-bottom .2em
+//login
+.login_principal
+	margin 0
+	opacity 0.9
+.btonAceptar
+	background #1f3294
+	border-color #1f3294
+	width 20em
+	font-weight bold
+	border 1px solid white
+	border-radius .2em
+	font-size 1.2em
+	opacity 1!important
+.btonCancelar
+	background #404040
+	border-color #404040
+	color white
+.container_log_sige
+	display block
+
+.formuLogin
+	display inline-block
+	width 25em
+	background: rgba(0, 0, 0, 0.7);
+	border-radius .5em
+	-webkit-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	-moz-box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+	box-shadow: 7px 7px 22px -4px rgba(0,0,0,0.75);
+.header_log
+	height 3em
+	background black
+	border-radius .5em .5em 0 0
+.headerLogin
+	color white
+	background #FF5722
+	padding 0
+.logout
+	float right
+	color white!important
+	font-weight bold
+	list-style none
+	font-size 1.2em
+	margin-right 10px
+.texto_cerrar
+	color white
+.texto_cerrar:hover
+	list-style none
+	text-decoration none
+.logoutbutton
+	color white
+	text-decoration none
+.boton_cerrar_sesion
+	color black!important
+	font-weight bold!important	
+.form-group
+	padding 1em
+.login-footer
+	color black!important
+	fomt-weight bold!important
+.dropmenu_loggin
+	right 0!important
+	background rgba(255,255,255,0.7)
+	width 5em!important
+	left auto!important
+.message_login
+	color #f3ecec
+.section_login
+	text-align center
+	padding-bottom 5em
+.login_principal
+	margin 0
+	padding-top 4em
+.texto_login_principal
+	display inline-block
+	vertical-align 190%
+.imagen_login
+	background gray
+	padding 1em 0 1em 0
+	margin-left 3em
+.imagen_efecto
+	border-radius 20em
+	padding 1em	
+.imagen_efecto:hover
+	background #353c9c
+	border-radius 20em
+	z-index 20!important
+
+//landingpage
+
+//encabezadolateral
+#Mostrarbarra
+	display block
+	z-index 2
+	position fixed
+	top 0
+	left 5em
+	border-radius 2px
+	padding .6em
+	cursor pointer
+	transition: all 0.4s linear
+	opacity 0.8
+	background  #2f3877
+	color white
+	z-index 10
+#Mostrarbarra:checked
+	width 6em
+#Mostrarbarra > div
+	width 22px
+	height 5px
+	background white
+	margin 4px 0px
+	transition: all 0.4s linear
+
+
+.socio #adminbarra
+	position fixed
+	top 5.6em
+	right 100%
+	color white	
+	font-size .9em
+	border-radius .2em
+	margin 0
+	z-index 10
+	transition: all 2s ease linear
+.admin #adminbarra
+	position fixed
+	top 5.6em
+	right 100%
+	color white	
+	font-size .9em
+	border-radius .2em
+	margin 0
+	z-index 10
+	transition: all 2s ease linear
+.barra_lateral
+	background rgba(33,51,115,0.9)
+	width 18em
+	overflow scroll
+	height 100em
+.menu_desp_child, .menu_desp_child2, .menu_desp_child3, .menu_desp_child4, .menu_desp_child5
+	display none
+.MainMenu-link
+	text-decoration none
+	display block
+	color white
+	font-weight bold
+	font-size 15px
+	margin-left 1em
+.MainMenu-link:hover
+	text-decoration none
+.MainMenu-item2
+	display block
+	padding .9em
+	border-bottom 1px solid #c5a680
+	width 100%
+.MainMenu-item2:hover
+	text-decoration none
+	list-style none
+	color white
+.MainMenu-link:hover
+	color white
+	text-decoration none
+a:focus
+	color white!important
+	text-decoration none
+.link_desp
+	padding-bottom 10px!important
+	color white
+	position relative
+	text-decoration none!important
+.link_desp:hover
+	color white
+.menu_desp_child div, .menu_desp_child2 div,.menu_desp_child3 div,.menu_desp_child4 div, .menu_desp_child5 div 
+	padding-bottom 5px
+	padding-top 5px
+//vistas
+.container_item_vista
+	background rgba(255,255,255,0.3)
+	padding .2em
+.contenedorvistaepps
+	display inline-block
+	vertical-align top
+	font-family sans-serif
+.info_user
+	display inline-block
+	vertical-align top
+	text-align left
+	background transparent
+	border-radius .2em
+	padding 1em
+	width 18em
+.titlte_vista
+	background #fb662b
+	font-size 18px
+	color white
+	border-radius .2em
+	padding 1em
+	font-weight: bold
+.titlte_vista2
+	background #fb662b
+	font-size 18px
+	color white
+	border-radius .2em
+	padding 1em
+	max-width 20em
+	margin-bottom 1em
+	cursor pointer
+	font-weight: bold
+.titlte_vista3
+	background rgba(191,191,191,0.7)
+	font-size 18px
+	color white
+	border-radius .2em
+	padding 1em
+	margin-bottom 1em
+	cursor pointer
+	font-weight: bold	
+.item_vista
+	background #4b5c9e
+	color white
+	font-size 16px
+	margin 1em
+	padding .5em
+	border-radius .2em
+	max-width 18em
+.item_vista2
+	background rgba(243,243,243,0.9)
+	color #fb662b
+	font-size 16px
+	margin 1em
+	padding .5em
+	border-radius .2em
+	max-width 18em
+.item_vista3
+	background #fb662b
+	color white
+	font-size 16px
+	margin 1em
+	padding .2em
+	border-radius .2em
+	max-width 18em
+.info_epps_porcargo
+	display block
+.info_epps_user
+	display block
+.desceppuser
+	display none
+.desceppcargos
+	display none
+.desceppuserrep
+	display none
+.desceppuserreprecib
+	display none
+.cont_formatos
+	text-align center
+	display inline-block
+.auto_registrodeasisepp
+	background rgba(0,0,0,0.7)!important
+	border-radius .2em!important
+//mediaqueries
+
+
+@media(max-width: 1020px)
+	.content_landing3
+		display none
+@media(max-width: 810px)
+	.standartab
+		margin-left .1em
+	.table
+		margin-left .5em
+	.information_event_view
+		width 99%
+	.prime_container_view_cli
+		padding-bottom 10em
+	.diviewcli
+		display block
+	.item_product_cart
+		font-size 11px!important
+	.producto_cart_view
+		padding 0
+		margin .5em
+		width 12em
+	.boton_additems
+		font-size 11px!important
+	.imagenequipo_cart
+		width 50%
+		height 50%
+	.vaciar div a
+		font-size 14px!important
+		width 50%!important
+@media(max-width: 810px)
+	.sideb
+		display none
+	.sidea	
+		display block
+		width 99%
+		max-width 99%
+	.cont_formatos
+		width: 89%
+		margin-left 0
+@media(max-width: 660px)
+	.form_create
+		width 25em	
+	.form
+		margin-left 0.7em
+	.imagen_efecto
+		width 200px
+		height 250px
+	.titulo_landing
+		margin-top -2em
+	.formuLogin
+		width 20em
+	.btonAceptar
+		width 16em
+	.text_view
+		width 24em
+	.prime_container_view_cli
+		15em
+	.div_datos_equipo
+		display block
+	.container_info_talega_cli_box
+		display none
+	.events_view_content
+		margin-top 10em
+
+	.nombre_event
+		font-size 14px
+	.desc_event, .costo_event, .date_event, .place_event, .detail_event
+		font-size 12px
+
+@media(max-width: 590px)
+	.container_view
+		overflow-x scroll!important
+	.imagen_event_view_inner
+		width 350px
+		height 350px
+	.information_event_view
+		max-width 27em
+	.input_create
+		font-size 11px
+	.container_summary
+		width 7em
+@media(max-width: 490px)
+	.Buscador
+		width 17.5em
+	.div_datos_cli
+		width 100%
+	.form_create
+		width 96%
+	.form_create_filter
+		width 98%
+	.consol_cart_view
+		width 98%
+		font-size 11px
+	.Titulo_formulario
+		font-size 1em
+	.confSol
+		display block
+	.form_csv
+		width 95%
+		margin-left 10px
+	.form_create_csv
+		margin-left .8em
+		width 95%
+		margin-left 7px
+@media(max-width: 400px)
+	.logout
+		max-width 10em
+		margin-right 0
+		margin-top -26px
+		font-size 1em
+		font-weight normal
+	.imagenequipo
+		height 50px
+		width 50px
+	.prime_container_view_cli
+		padding-left .1em
+	.cell_image
+		display block
+		text-align left
+		background #dcd9d9
+	.cell_view_cli
+		display block
+		text-align center
+		border none!important
+	.cell_view_cli p 
+		display inline-block
+	.pagcli
+		padding 0!important
+		right .2em
+		left 0
+	.nombre_equipo_res
+		display block
+	.nombre_equipo_res2
+		display none
+	.container_body_view_cli
+		border-radius 0!important
+		border 2px solid gray
+	.table_view_cli
+		font-family sans-serif
+	.divider_view_cli
+		display block
+		background black
+		height .2em
+	.textarea
+		width: 21em
+@media(max-width: 380px)
+	.input_create
+		padding .1em
+	.label_create
+		color gray!important
+		font-size 0.8em
+	.formuLogin
+		width 18em
+	.btonAceptar
+		width 15em
+	.Buscador
+		width 15em
+	.imagen_resp
+		width 250px
+		height 250px
+		margin-top 0
+	.text_view
+		width 15em
+	.textarea
+		width: 18em
+	.update_item
+		font-size 11px !important
+	.update_sol_item 
+		font-size 12.6px
+@media(max-width: 355px)
+	.imagen_event_view_inner
+		width 280px
+		height 280px
+	.information_event_view
+		max-width 23em
+@media(max-width: 290px)
+	.imagen_event_view_inner
+		width 200px
+		height 200px
+	.information_event_view
+		max-width 21em
+	.container_talega_cliente
+		margin-left .2em
+		margin-right .2em
+	.barra_lateral
+		padding-bottom 6em
+
+
+
+
+
+	
+
+

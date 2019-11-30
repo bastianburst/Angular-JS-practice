@@ -1,0 +1,37 @@
+<h1>TABLA DE ASISTENTES</h1>
+<a class="boton" href="#/asistentes/new">
+    <md-button class="md-raised md-primary Section-Novedades-Form-Button button hvr-underline-from-left botoncreate">Crear nuevo</md-button>
+</a>
+<a class="boton" href="#/">
+    <md-button class="md-raised md-primary Section-Novedades-Form-Button button hvr-underline-from-left botoncreate">Volver</md-button>
+</a>
+<table md-table class="container" md-row-select multiple md-progress="vm.promise">
+    <thead md-head class="container_head">
+        <tr md-row>
+            <th md-column>ID</th>
+            <th md-column>Nombres</th>
+            <th md-column>Apellidos</th>
+            <th md-column>Documento</th>
+            <th md-column>Email</th>
+            <th md-column>Estado</th>
+            <th md-column></th>
+            <th md-column></th>
+        </tr>
+    </thead>
+    <tbody md-body class="container_body">
+        <tr md-row  md-auto-select ng-repeat="usuario in vm.asistentes">
+            <td md-cell>{{usuario.id}}</td>
+            <td md-cell>{{usuario.nombres}}</td>
+            <td md-cell>{{usuario.apellidos}}</td>
+            <td md-cell>{{usuario.documento}}</td>
+            <td md-cell>{{usuario.email}}</td>
+            <td md-cell>
+                <div ng-show="usuario.estado==true;" style="color:green; font-weight: bold;">Activo</div>
+                <div ng-show="usuario.estado==false;" style="color:red; font-weight: bold;">Inactivo</div>
+            </td>
+            <td md-cell><a style="font-weight: bold;" href="#/asistentes/upd/{{usuario.id}}">Editar</a></td>
+            <td><md-button ng-click="vm.eliminar(usuario.id)" class="md-raised md-primary Section-Novedades-Form-Button button hvr-underline-from-left botoncreate">Eliminar</md-button></td>          
+        </tr>
+    </tbody>
+</table>
+</md-table-container>

@@ -1,0 +1,75 @@
+<div class="create_general">
+    <section class="section_create_principal">
+
+
+        <form class="form" enctype="multipart/form-data" name="formCreate" ng-controller="AsistentesupdCtrl">
+
+            <!--
+    <input type="text" ng-model="vm.asistente.nombres" placeholder="Nombres" />
+    <input type="text" ng-model="vm.asistente.apellidos" placeholder="Apellidos" />
+    <input type="text" ng-model="vm.asistente.documento" placeholder="Documento" />
+    <input type="mail" ng-model="vm.asistente.email" placeholder="Email" />
+    <input type="date" ng-model="vm.asistente.fechanac" placeholder="Fecha de nacimiento" />
+
+    <input type="submit" ng-click="vm.createAsistente()" value="Guardar" />
+-->
+
+            <article class="form_create">
+                <div class="divider_form_top">
+                    <div class="Titulo_formulario">Formulario de edición de asistentes</div>
+                </div>
+
+
+                <md-input-container class="md-block input_create" id="transition">
+                    <label class="label_create">Nombres</label>
+                    <input class="input_create_inner" type="text" maxlength="45" name="nombre1" ng-model="vm.asistente.nombres" ng-pattern="/^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]*$/"
+                        required/>
+                    <div ng-messages="formCreate.nombre1.$error">
+                        <div ng-message-exp="[ 'required', 'minlength', 'md-maxlength', 'pattern'] "> Ingresa un nombre válido.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block input_create" id="transition">
+                    <label class="label_create">Apellidos</label>
+                    <input class="input_create_inner" type="text" maxlength="45" name="nombre2" ng-model="vm.asistente.apellidos" ng-pattern="/^[a-zA-ZñÑáéíóúÁÉÍÓÚ\s]*$/"
+                    />
+                    <div ng-messages="formCreate.nombre2.$error">
+                        <div ng-message-exp="[ 'required', 'minlength', 'md-maxlength', 'pattern'] "> Ingresa un nombre válido.</div>
+                    </div>
+                </md-input-container>
+
+
+                <md-input-container class="md-block input_create" id="transition">
+                    <label class="label_create">Número de documento</label>
+                    <input name="numdoc" class="input_create_inner" maxlength="13" ng-model="vm.asistente.documento" ng-pattern="/^[1-9a-zA-ZñÑ]+[0-9a-zA-ZñÑ]*$/ "
+                        required/>
+                    <div ng-messages="formCreate.numdoc.$error">
+                        <div ng-message-exp="[ 'required', 'minlength', 'md-maxlength', 'pattern'] "> Ingresa un número de documento válido.</div>
+                    </div>
+                </md-input-container>
+
+                <md-input-container class="md-block input_create" id="transition">
+                    <label class="label_create">Email</label>
+                    <input type="mail" name="numdoc" class="input_create_inner" maxlength="50" ng-model="vm.asistente.email" required/>
+                    <div ng-messages="formCreate.numdoc.$error">
+                        <div ng-message-exp="[ 'required', 'minlength', 'md-maxlength', 'pattern'] "> Ingresa un número de documento válido.</div>
+                    </div>
+                </md-input-container>
+
+                <mdp-date-picker class="NovedadInt-Article-Picker-Material" ng-model="vm.asistente.fechanac" mdp-placeholder="Fecha de nacimiento"
+                    required>
+                </mdp-date-picker>
+
+                <div class="divider_form_bottom">
+                    <div class="botones_create">
+                        <md-button class="md-raised md-primary boton_create_form button hvr-grow" ng-click="vm.UpdAsistente()">Actualizar </md-button>
+                        <div class="md-button md-raised md-primary button hvr-grow">
+                            <a class="boton_create_form2" href="#/asistentes">Cancelar </a>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </form>
+    </section>
+</div>
